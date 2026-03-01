@@ -44,6 +44,10 @@
                 <div class="bg-white shadow rounded-2xl p-6 sm:p-7 overflow-hidden">
                     {{ $slot }}
                 </div>
+
+                <p class="mt-4 text-center text-[11px] text-slate-500">
+                    {{ config('app.name') }} v{{ config('app.version') }}
+                </p>
             </div>
         </div>
     </body>

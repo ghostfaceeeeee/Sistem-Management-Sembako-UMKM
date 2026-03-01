@@ -48,6 +48,10 @@
             <main class="relative z-0">
                 {{ $slot }}
             </main>
+
+            <footer class="px-4 pb-4 text-right text-[11px] text-slate-500">
+                {{ config('app.name') }} v{{ config('app.version') }}
+            </footer>
         </div>
     </body>
 </html>
