@@ -7,23 +7,43 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <script>
+            (function () {
+                const applyTheme = function (theme) {
+                    const normalized = theme === 'light' ? 'light' : 'dark';
+                    document.documentElement.classList.remove('theme-dark', 'theme-light');
+                    document.documentElement.classList.add('theme-' + normalized);
+                    localStorage.setItem('app-theme', normalized);
+                    document.documentElement.setAttribute('data-theme', normalized);
+                };
+
+                window.setAppTheme = applyTheme;
+
+                const saved = localStorage.getItem('app-theme');
+                applyTheme(saved === 'light' ? 'light' : 'dark');
+            })();
+        </script>
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
-            </div>
+    <body class="antialiased endfield-theme">
+        <div class="min-h-screen endfield-shell flex items-center justify-center px-4 py-8">
+            <div class="w-full max-w-md">
+                <div class="text-center mb-6">
+                    <a href="/" class="inline-flex items-center gap-3">
+                        <x-application-logo class="w-10 h-10 fill-current text-gray-800" />
+                        <span class="font-semibold tracking-wide text-gray-800">UMKM Sembako</span>
+                    </a>
+                </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
+                <div class="bg-white shadow rounded-2xl p-6 sm:p-7 overflow-hidden">
+                    {{ $slot }}
+                </div>
             </div>
         </div>
     </body>

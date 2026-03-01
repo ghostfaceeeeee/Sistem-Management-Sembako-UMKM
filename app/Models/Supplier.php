@@ -10,7 +10,7 @@ class Supplier extends Model
         'nama_supplier',
         'alamat',
         'no_telp',
-        'email',
+        'email'
     ];
 
     public function products()

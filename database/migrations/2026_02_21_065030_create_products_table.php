@@ -11,16 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('products', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama_barang');
-            $table->string('kategori')->nullable();
-            $table->decimal('harga_beli', 12, 2);
-            $table->decimal('harga_jual', 12, 2);
-            $table->integer('stok')->default(0);
-            $table->foreignId('supplier_id')->constrained('suppliers')->onDelete('cascade');
-            $table->timestamps();
-        });
+Schema::create('products', function (Blueprint $table) {
+    $table->id();
+    $table->string('nama_barang');
+    $table->foreignId('category_id')
+      ->constrained()
+      ->cascadeOnDelete();
+    $table->integer('harga_beli');
+    $table->integer('harga_jual');
+    $table->integer('stok')->default(0);
+    $table->foreignId('supplier_id')->constrained()->cascadeOnDelete();
+    $table->timestamps();
+});
     }
 
     /**

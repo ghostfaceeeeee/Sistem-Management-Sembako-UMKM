@@ -7,28 +7,45 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <script>
+            (function () {
+                const applyTheme = function (theme) {
+                    const normalized = theme === 'light' ? 'light' : 'dark';
+                    document.documentElement.classList.remove('theme-dark', 'theme-light');
+                    document.documentElement.classList.add('theme-' + normalized);
+                    localStorage.setItem('app-theme', normalized);
+                    document.documentElement.setAttribute('data-theme', normalized);
+                };
+
+                window.setAppTheme = applyTheme;
+
+                const saved = localStorage.getItem('app-theme');
+                applyTheme(saved === 'light' ? 'light' : 'dark');
+            })();
+        </script>
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+    <body class="antialiased endfield-theme">
+        <div class="min-h-screen endfield-shell">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <header class="endfield-header border-b border-cyan-400/20">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 endfield-header-inner">
                         {{ $header }}
                     </div>
                 </header>
             @endisset
 
             <!-- Page Content -->
-            <main>
+            <main class="relative z-0">
                 {{ $slot }}
             </main>
         </div>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: auto;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 6px 8px;
+            vertical-align: top;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        th {
+            background: #f3f4f6;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .w-date { width: 150px; }
+        .w-product { width: 240px; }
+        .w-category { width: 140px; }
+        .w-supplier { width: 220px; }
+        .w-type { width: 80px; }
+        .w-qty { width: 90px; }
+        .w-note { width: 320px; }
+    </style>
+</head>
+<body>
+<table>
+    <colgroup>
+        <col class="w-date">
+        <col class="w-product">
+        <col class="w-category">
+        <col class="w-supplier">
+        <col class="w-type">
+        <col class="w-qty">
+        <col class="w-note">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Tanggal</th>
+            <th>Produk</th>
+            <th>Kategori</th>
+            <th>Supplier</th>
+            <th>Tipe</th>
+            <th>Jumlah</th>
+            <th>Catatan</th>
+        </tr>
+    </thead>
+    <tbody>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Minyak 500ml</td>
+                <td>Minyak &amp; Lemak</td>
+                <td>PT. Bimoli</td>
+                <td>in</td>
+                <td>54</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Beras Premium 5kg</td>
+                <td>Beras</td>
+                <td>PT Sumber Pangan Nusantara</td>
+                <td>in</td>
+                <td>83</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Gula Pasir 1kg</td>
+                <td>Gula</td>
+                <td>PT Bumi Sembako Abadi</td>
+                <td>in</td>
+                <td>89</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Mie Instan Soto</td>
+                <td>Mie Instan</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>in</td>
+                <td>120</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Mie Instan Kari</td>
+                <td>Mie Instan</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>in</td>
+                <td>95</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Teh Celup 50s</td>
+                <td>Minuman</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>in</td>
+                <td>73</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Kopi Bubuk 200gr</td>
+                <td>Minuman</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>in</td>
+                <td>89</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Susu Kental Manis</td>
+                <td>Minuman</td>
+                <td>PT Pangan Sejahtera</td>
+                <td>in</td>
+                <td>96</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Tepung Terigu 1kg</td>
+                <td>Tepung</td>
+                <td>PT Rasa Nusantara</td>
+                <td>in</td>
+                <td>41</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Tepung Tapioka 500gr</td>
+                <td>Tepung</td>
+                <td>PT Rasa Nusantara</td>
+                <td>in</td>
+                <td>107</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Garam Halus 500gr</td>
+                <td>Bumbu Dapur</td>
+                <td>PT Rasa Nusantara</td>
+                <td>in</td>
+                <td>48</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Kecap Manis 600ml</td>
+                <td>Bumbu Dapur</td>
+                <td>PT Rasa Nusantara</td>
+                <td>in</td>
+                <td>85</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Sarden Kaleng Kecil</td>
+                <td>Produk Kaleng</td>
+                <td>PT Pangan Sejahtera</td>
+                <td>in</td>
+                <td>119</td>
+                <td>Initial stock</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:06:13</td>
+                <td>Minyak 500ml</td>
+                <td>Minyak &amp; Lemak</td>
+                <td>PT. Bimoli</td>
+                <td>in</td>
+                <td>400</td>
+                <td>-</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 08:19:41</td>
+                <td>Mie Instan Soto</td>
+                <td>Mie Instan</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>out</td>
+                <td>95</td>
+                <td>-</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Minyak 500ml</td>
+                <td>Minyak &amp; Lemak</td>
+                <td>PT. Bimoli</td>
+                <td>out</td>
+                <td>21</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Beras Premium 5kg</td>
+                <td>Beras</td>
+                <td>PT Sumber Pangan Nusantara</td>
+                <td>out</td>
+                <td>15</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Gula Pasir 1kg</td>
+                <td>Gula</td>
+                <td>PT Bumi Sembako Abadi</td>
+                <td>out</td>
+                <td>15</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Mie Instan Soto</td>
+                <td>Mie Instan</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>out</td>
+                <td>23</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Mie Instan Kari</td>
+                <td>Mie Instan</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>out</td>
+                <td>6</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Teh Celup 50s</td>
+                <td>Minuman</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>out</td>
+                <td>9</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Kopi Bubuk 200gr</td>
+                <td>Minuman</td>
+                <td>PT Maju Distribusi Indonesia</td>
+                <td>out</td>
+                <td>20</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Susu Kental Manis</td>
+                <td>Minuman</td>
+                <td>PT Pangan Sejahtera</td>
+                <td>out</td>
+                <td>9</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Tepung Terigu 1kg</td>
+                <td>Tepung</td>
+                <td>PT Rasa Nusantara</td>
+                <td>out</td>
+                <td>9</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Tepung Tapioka 500gr</td>
+                <td>Tepung</td>
+                <td>PT Rasa Nusantara</td>
+                <td>out</td>
+                <td>22</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Garam Halus 500gr</td>
+                <td>Bumbu Dapur</td>
+                <td>PT Rasa Nusantara</td>
+                <td>out</td>
+                <td>17</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Kecap Manis 600ml</td>
+                <td>Bumbu Dapur</td>
+                <td>PT Rasa Nusantara</td>
+                <td>out</td>
+                <td>5</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:24:32</td>
+                <td>Sarden Kaleng Kecil</td>
+                <td>Produk Kaleng</td>
+                <td>PT Pangan Sejahtera</td>
+                <td>out</td>
+                <td>5</td>
+                <td>Sample sales</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:08:45</td>
+                <td>Minyak 500ml</td>
+                <td>Minyak &amp; Lemak</td>
+                <td>PT. Bimoli</td>
+                <td>out</td>
+                <td>200</td>
+                <td>-</td>
+            </tr>
+                    <tr>
+                <td>2026-02-24 06:06:36</td>
+                <td>Minyak 500ml</td>
+                <td>Minyak &amp; Lemak</td>
+                <td>PT. Bimoli</td>
+                <td>out</td>
+                <td>200</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+</table>
+</body>
+</html>
