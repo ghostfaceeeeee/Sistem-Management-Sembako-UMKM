@@ -38,4 +38,4 @@ npm run dev
 
 ##Screenshot
 
-! [image alt]https://github.com/ghostfaceeeeee/Sistem-Management-Sembako-UMKM/blob/48b86bc9bace90b60231e294da17d2462925a8c6/Screenshot.jpg
+![image alt]https://github.com/ghostfaceeeeee/Sistem-Management-Sembako-UMKM/blob/48b86bc9bace90b60231e294da17d2462925a8c6/Screenshot.jpg
