@@ -19,6 +19,9 @@
 /storage/*.key
 /storage/pail
 /vendor
+/img
+/laporan-stok-*.csv
+/laporan-stok-*.xls
 Homestead.json
 Homestead.yaml
 Thumbs.db
