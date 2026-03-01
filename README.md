@@ -47,6 +47,21 @@ Simpan screenshot UI di folder berikut:
 - `docs/screenshots/products.png`
 - `docs/screenshots/home.png`
 
+## Preview UI
+
+<table>
+  <tr>
+    <td align="center"><b>Analitik</b></td>
+    <td align="center"><b>Produk</b></td>
+    <td align="center"><b>Home</b></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/analytics.png" alt="Analitik" width="100%"></td>
+    <td><img src="docs/screenshots/products.png" alt="Produk" width="100%"></td>
+    <td><img src="docs/screenshots/home.png" alt="Home" width="100%"></td>
+  </tr>
+</table>
+
 ## Catatan
 
 - `public/storage` wajib ada agar gambar produk tampil.
